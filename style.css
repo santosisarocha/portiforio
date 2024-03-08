@@ -1,0 +1,70 @@
+#navbar {
+    display: flex; /* Define o cabeçalho como flexível */
+    justify-content: space-between; /* Alinha os elementos filhos ao longo do eixo principal com espaço entre eles */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno para o cabeçalho */
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    
+}
+
+#logo{
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.menu-icon{
+    margin-right: 150px;
+    font-size: 30px;
+}
+
+#calendario{
+    background-color: rgb(244, 239, 236);
+    margin-top: -9px;
+
+}
+
+
+.rosa{
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: 200px;
+    border-radius: 80px;
+    background-color: rgb(221, 183, 172);
+    border-color: rgb(221, 183, 172)
+
+}
+.verde{
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: 200px;
+    border-radius: 80px;
+    background-color: rgb(153, 155, 132);
+    border-color: rgb(153, 155, 132);
+}
+
+hr {
+    border: none; 
+    height: 5px;    
+    background-color: rgb(198, 168, 157);     
+   
+    
+}
+
+.footer_container {
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    padding: 10px;
+    
+
+}
+
+#nome{
+    margin-left: 1400px;
+}
