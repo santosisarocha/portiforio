@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site com javascript</title>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <script>
+    
+        function numeroQuadrado (n1, n2, n3){
+            if (n1 > n2 && n1 > n3){
+                return "o maior numero é " + n1
+            } else if  (n2 > n1 && n2 > n3) {
+                return "o maior numero é " + n2                
+            } else if  (n3 > n1 && n3 > n2) {
+                return "o maior numero é " + n3             
+            }
+        }
+
+        var n1 = prompt("digite o primeiro numero numero:")
+        var n2 = prompt("digite o segundo numero numero:")
+        var n3 = prompt("digite o terceiro numero numero:")
+        alert (numeroQuadrado(n1, n2, n3))
+    </script>
+</body>
+</html>
