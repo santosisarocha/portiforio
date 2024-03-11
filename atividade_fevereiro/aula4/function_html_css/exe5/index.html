@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente</title>
+    <title>Meu primeiro site com JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Cadastro de Cliente</h1>
-    <form id="cadastroForm">
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
-        </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required>
-        </div>
-        <div>
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" required>
-        </div>
-        <div>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" required>
-        </div>
-        <div>
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" required>
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
+    <header>
+        <nav id="navbar" >
+            <div id="logo">
+                <h1>portfolio.</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> 
+            </div>
+            
 
-    <script src="script.js"></script>
+    </header>
+    <main id="calendario">
+        
+        <hr >
+        <div id="calendario">
+            
+        <section>
+            <div class="quadrado">
+                 cadastro do  cliente:
+            </div>
+
+            <div class="quadrado1">
+                <form id="cadastroForm">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" required>
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" required>
+                    </div>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer id="calendario">
+        <hr >
+        <div class="footer_container">
+            <h1 id="nome">Isabela Rocha.</h1>
+        </div>
+    </footer>
+
+
 </body>
-</html>

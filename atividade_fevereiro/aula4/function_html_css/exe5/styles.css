@@ -1,44 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
+#navbar {
+    display: flex; /* Define o cabeçalho como flexível */
+    justify-content: space-between; /* Alinha os elementos filhos ao longo do eixo principal com espaço entre eles */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno para o cabeçalho */
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    
 }
 
-h1 {
+#logo{
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.menu-icon{
+    margin-right: 150px;
+    font-size: 30px;
+}
+
+#calendario{
+    background-color: rgb(244, 239, 236);
+    margin-top: -9px;
+    margin-bottom: -70px;
+    
+
+}
+.quadrado{
+    width: 500px;
+    height: 50px;
+    background-color: rgba(198, 168, 157, 0.5);
+    margin-top: 5%;
+    margin-left: 35%;
+    
+    border-radius: 20px;
     text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.quadrado1{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(153, 155, 132, 0.5);
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    text-align: center;   
+    align-items: center; 
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 25px;
+    
+    
 }
 
-form {
-    width: 50%;
-    margin: 0 auto;
+#num1{
+    border-radius: 80px;
+    width: 200px;
+    height: 25px;
+    border-color: rgba(153, 155, 132, 0.5);
+
+}
+#num2{
+    border-radius: 80px;
+    width: 200px;
+    height: 25px;
+    border-color: rgba(153, 155, 132, 0.5);
+
+}
+#numero3{
+    border-radius: 80px;
+    width: 200px;
+    height: 25px;
+    border-color: rgba(153, 155, 132, 0.5);
+
 }
 
-div {
-    margin-bottom: 10px;
+#operacao{
+    border-radius: 80px;    
+    width: 200px;
+    height: 35px;
+    border-color: aliceblue;
+
 }
 
-label {
-    display: inline-block;
-    width: 100px;
+#botao{
+    border-radius: 80px;
+    border-color: rgba(153, 155, 132, 0.5);
+    width: 200px;
+    height: 50px;
+
+
 }
 
-input {
-    width: calc(100% - 120px);
-    padding: 5px;
+
+hr {
+    border: none; 
+    height: 5px;    
+    background-color: rgb(198, 168, 157);     
+    line-height: 50px;
+    
+    font-size: 25px;
+    
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.footer_container {
+    margin-top: -9px;    
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    padding: 10px;
+    
+
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-.error {
-    border: 1px solid red;
+#nome{
+    margin-left: 1400px;
 }

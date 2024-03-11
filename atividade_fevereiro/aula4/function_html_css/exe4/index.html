@@ -3,28 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Calculadora</title>
+    <title>Meu primeiro site com JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <div class="calculator">
-        <input type="number" id="num1" placeholder="Digite o primeiro número">
-        <input type="number" id="num2" placeholder="Digite o segundo número">
-        <select id="operacao">
-            <option value="soma">Soma</option>
-            <option value="subtracao">Subtração</option>
-            <option value="multiplicacao">Multiplicação</option>
-            <option value="divisao">Divisão</option>
-            <option value="exponenciacao">Exponenciação</option>
-            <option value="raiz">Raiz Quadrada</option>
-            <option value="porcentagem">Porcentagem</option>
-            <option value="fibonacci">Série de Fibonacci</option>
-            <option value="fatorial">Fatorial</option>
-        </select>
-        <button onclick="calcular()">Calcular</button>
-        <div id="resultado"></div>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <nav id="navbar" >
+            <div id="logo">
+                <h1>portfolio.</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> 
+            </div>
+            
+
+    </header>
+    <main id="calendario">
+        
+        <hr >
+        <div id="calendario">
+            
+        <section>
+            <div class="quadrado">
+                 
+                Bem-vindo a calculadora :
+            </div>
+
+            <div class="quadrado1">
+                <br>
+                <input type="number" id="num1" placeholder="Digite o primeiro número">
+                <br>
+                <br>
+                <input type="number" id="num2" placeholder="Digite o segundo número">
+                <br>
+                <br>
+                <select id="operacao">
+                    <option value="soma">Soma</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="multiplicacao">Multiplicação</option>
+                    <option value="divisao">Divisão</option>
+                    <option value="exponenciacao">Exponenciação</option>
+                    <option value="raiz">Raiz Quadrada</option>
+                    <option value="porcentagem">Porcentagem</option>
+                    <option value="fibonacci">Série de Fibonacci</option>
+                    <option value="fatorial">Fatorial</option>
+                </select>
+                <br>
+                <br>
+                <button id ="botao"  onclick="calcular()">Calcular</button>
+                <br>
+                <br>
+                <div id="resultado"></div>
+                
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer id="calendario">
+        <hr >
+        <div class="footer_container">
+            <h1 id="nome">Isabela Rocha.</h1>
+        </div>
+    </footer>
+
+
 </body>
-</html>
