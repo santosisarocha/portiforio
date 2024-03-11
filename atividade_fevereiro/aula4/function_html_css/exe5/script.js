@@ -1,54 +1,79 @@
-function calcular() {
-    var n1 = parseFloat(document.getElementById("num1").value);
-    var n2 = parseFloat(document.getElementById("num2").value);
-    var operacao = document.getElementById("operacao").value;
-    var resultado = document.getElementById("resultado");
+document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    switch (operacao) {
-        case "soma":
-            resultado.textContent = n1 + n2;
-            break;
-        case "subtracao":
-            resultado.textContent = n1 - n2;
-            break;
-        case "multiplicacao":
-            resultado.textContent = n1 * n2;
-            break;
-        case "divisao":
-            resultado.textContent = n1 / n2;
-            break;
-        case "exponenciacao":
-            resultado.textContent = Math.pow(n1, n2);
-            break;
-        case "raiz":
-            resultado.textContent = "Raiz de n1: " + Math.sqrt(n1) + ", Raiz de n2: " + Math.sqrt(n2);
-            break;
-        case "porcentagem":
-            resultado.textContent = (n1 * n2) / 100;
-            break;
-        case "fibonacci":
-            resultado.textContent = calcularFibonacci(n1);
-            break;
-        case "fatorial":
-            resultado.textContent = calcularFatorial(n1);
-            break;
-        default:
-            resultado.textContent = "Operação inválida";
+    // Resetar estilos de erro
+    resetErrors();
+
+    // Obter valores dos campos
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var endereco = document.getElementById('endereco').value;
+    var telefone = document.getElementById('telefone').value;
+    var cpf = document.getElementById('cpf').value;
+
+    // Validar campos
+    var isValid = true;
+
+    if (nome.trim() === '') {
+        isValid = false;
+        setError('nome', 'Nome é obrigatório');
+    }
+
+    if (!validateEmail(email)) {
+        isValid = false;
+        setError('email', 'E-mail inválido');
+    }
+
+    if (endereco.trim() === '') {
+        isValid = false;
+        setError('endereco', 'Endereço é obrigatório');
+    }
+
+    if (!validatePhoneNumber(telefone)) {
+        isValid = false;
+        setError('telefone', 'Telefone inválido');
+    }
+
+    if (!validateCPF(cpf)) {
+        isValid = false;
+        setError('cpf', 'CPF inválido');
+    }
+
+    if (isValid) {
+        // Submeter formulário
+        alert('Cadastro realizado com sucesso!');
+        document.getElementById('cadastroForm').reset();
+    }
+});
+
+function resetErrors() {
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].classList.remove('error');
+        var nextSibling = inputs[i].nextElementSibling;
+        if (nextSibling) {
+            nextSibling.textContent = '';
+        }
     }
 }
 
-function calcularFibonacci(numero) {
-    var fibonacci = [0, 1];
-    for (var i = 2; i <= numero; i++) {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-    }
-    return fibonacci.join(", ");
+
+function setError(id, message) {
+    var input = document.getElementById(id);
+    input.classList.add('error');
+    var errorElement = document.createElement('span');
+    errorElement.textContent = message;
+    input.parentNode.appendChild(errorElement);
 }
 
-function calcularFatorial(numero) {
-    var fatorial = 1;
-    for (var i = 1; i <= numero; i++) {
-        fatorial *= i;
-    }
-    return fatorial;
+function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+}
+
+function validatePhoneNumber(phoneNumber) {
+    return /^[0-9]+$/.test(phoneNumber);
+}
+
+function validateCPF(cpf) {
+    return /^[0-9]{11}$/.test(cpf);
 }

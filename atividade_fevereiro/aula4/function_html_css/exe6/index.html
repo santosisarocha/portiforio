@@ -1,34 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Status do Aluno</title>
+    <title>Meu primeiro site com JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Status do Aluno</h1>
-    <form id="statusForm">
-        <div>
-            <label for="nota1">Nota 1:</label>
-            <input type="number" id="nota1" step="0.1" required>
-            <input type="number" id="peso1" step="0.1" required placeholder="Peso">
-        </div>
-        <div>
-            <label for="nota2">Nota 2:</label>
-            <input type="number" id="nota2" step="0.1" required>
-            <input type="number" id="peso2" step="0.1" required placeholder="Peso">
-        </div>
-        <div>
-            <label for="nota3">Nota 3:</label>
-            <input type="number" id="nota3" step="0.1" required>
-            <input type="number" id="peso3" step="0.1" required placeholder="Peso">
-        </div>
-        <button type="submit">Verificar Status</button>
-    </form>
+    <header>
+        <nav id="navbar" >
+            <div id="logo">
+                <h1>portfolio.</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> 
+            </div>
+            
 
-    <div id="resultado"></div>
+    </header>
+    <main id="calendario">
+        
+        <hr >
+        <div id="calendario">
+            
+        <section>
+            <div class="quadrado">
+                 cadastro do  cliente:
+            </div>
 
-    <script src="script.js"></script>
+            <div class="quadrado1">
+                <form id="statusForm">
+                    <div>
+                        <label for="nota1">Nota 1:</label>
+                        <input type="number" id="nota1" step="0.1" required>
+                        <input type="number" id="peso1" step="0.1" required placeholder="Peso">
+                    </div>
+                    <div>
+                        <label for="nota2">Nota 2:</label>
+                        <input type="number" id="nota2" step="0.1" required>
+                        <input type="number" id="peso2" step="0.1" required placeholder="Peso">
+                    </div>
+                    <div>
+                        <label for="nota3">Nota 3:</label>
+                        <input type="number" id="nota3" step="0.1" required>
+                        <input type="number" id="peso3" step="0.1" required placeholder="Peso">
+                    </div>
+                    <button id = "botao" type="submit">Verificar Status</button>
+                </form>
+            
+                <div id="resultado"></div>
+            
+                <script src="script.js"></script>
+                
+                
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer id="calendario">
+        <hr >
+        <div class="footer_container">
+            <h1 id="nome1">Isabela Rocha.</h1>
+        </div>
+    </footer>
+
+
 </body>
-</html>

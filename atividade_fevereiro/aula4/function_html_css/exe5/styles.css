@@ -55,21 +55,35 @@
     
 }
 
-#num1{
+#nome{
     border-radius: 80px;
     width: 200px;
     height: 25px;
     border-color: rgba(153, 155, 132, 0.5);
 
 }
-#num2{
+#email{
     border-radius: 80px;
     width: 200px;
     height: 25px;
     border-color: rgba(153, 155, 132, 0.5);
 
 }
-#numero3{
+#endereco{
+    border-radius: 80px;
+    width: 200px;
+    height: 25px;
+    border-color: rgba(153, 155, 132, 0.5);
+
+}
+#telefone{
+    border-radius: 80px;
+    width: 200px;
+    height: 25px;
+    border-color: rgba(153, 155, 132, 0.5);
+
+}
+#cpf{
     border-radius: 80px;
     width: 200px;
     height: 25px;
@@ -114,6 +128,6 @@ hr {
 
 }
 
-#nome{
+#nome1{
     margin-left: 1400px;
 }
