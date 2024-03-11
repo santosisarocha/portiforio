@@ -21,26 +21,39 @@
 #calendario{
     background-color: rgb(244, 239, 236);
     margin-top: -9px;
+    margin-bottom: -70px;
+    
 
 }
-
-
-.rosa{
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    width: 200px;
+.quadrado{
+    width: 500px;
+    height: 150px;
+    background-color: rgba(198, 168, 157, 0.5);
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 5%;
     border-radius: 80px;
-    background-color: rgb(221, 183, 172);
-    border-color: rgb(221, 183, 172)
-
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    font-size: 30px;
 }
+.quadrado1{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(153, 155, 132, 0.5);
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    border-radius: 80px;
+}
+
+
+
 .verde{
     align-items: center;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
     width: 200px;
@@ -58,6 +71,7 @@ hr {
 }
 
 .footer_container {
+    
     background-color: rgb(244, 239, 236);
     color: rgb(198, 168, 157);
     padding: 10px;
@@ -68,3 +82,4 @@ hr {
 #nome{
     margin-left: 1400px;
 }
+
