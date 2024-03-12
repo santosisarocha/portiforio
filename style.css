@@ -54,7 +54,7 @@
 hr {
     border: none; 
     height: 5px;    
-    background-color: rgb(198, 168, 157);     
+    background-color: white;     
    
     
 }
@@ -70,3 +70,10 @@ hr {
 #nome{
     margin-left: 1400px;
 }
+
+#imagem{
+    width:100%;
+    
+
+}
+

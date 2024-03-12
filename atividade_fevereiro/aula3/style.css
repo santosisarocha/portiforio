@@ -20,8 +20,7 @@
 
 #calendario{
     background-color: rgb(244, 239, 236);
-    margin-top: -9px;
-    margin-bottom: -70px;
+    
     
 
 }
@@ -29,7 +28,7 @@
     width: 500px;
     height: 100px;
     background-color: rgba(198, 168, 157, 0.5);
-    margin-top: 5%;
+    
     margin-left: 35%;
     margin-bottom: 5%;
     border-radius: 80px;
@@ -44,7 +43,7 @@
     background-color: rgba(153, 155, 132, 0.5);
     
     margin-left: 35%;
-    margin-bottom: 5%;
+    
     border-radius: 80px;
     text-align: center;
     line-height: 100px;

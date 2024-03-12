@@ -1,0 +1,96 @@
+#navbar {
+    display: flex; /* Define o cabeçalho como flexível */
+    justify-content: space-between; /* Alinha os elementos filhos ao longo do eixo principal com espaço entre eles */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno para o cabeçalho */
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    
+}
+
+#logo{
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.menu-icon{
+    margin-right: 150px;
+    font-size: 30px;
+}
+
+#calendario{
+    background-color: rgb(244, 239, 236);    
+    
+
+}
+.quadrado{
+    width: 500px;
+    height: 100px;
+    background-color: rgba(198, 168, 157, 0.5);
+    
+    margin-left: 35%;
+    margin-bottom: 5%;
+    border-radius: 80px;
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.quadrado1{
+    width: 500px;
+    height: 450px;
+    background-color: rgba(153, 155, 132, 0.5);
+    margin-top: 5%;
+    margin-left: 35%;
+   
+    border-radius: 80px;
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.button{
+    margin-top: 50px;
+    width: 150px;
+    height: 70px;
+    border-radius: 40px;    
+    align-items: center;
+    border-color: rgb(153, 155, 132);
+    background-color: rgba(153, 155, 132, 0.5);
+    font-size: 15px;
+    color: #ffffff;
+
+        
+
+}
+
+
+
+.verde{
+    align-items: center;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    width: 200px;
+    border-radius: 80px;
+    background-color: rgb(153, 155, 132);
+    border-color: rgb(153, 155, 132);
+}
+
+
+
+.footer_container {
+    
+    background-color: rgb(244, 239, 236);
+    color: rgb(198, 168, 157);
+    padding: 10px;
+    
+
+}
+
+#nome{
+    margin-left: 1400px;
+}
+
